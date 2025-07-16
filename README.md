@@ -15,9 +15,7 @@ Welcome! This repository hosts my resolution of "The American Express Campus Cha
 
 | File                    | Description                                     |
 | ----------------------- | ----------------------------------------------- |
-| `amex_data.csv`         | Raw dataset with customer clickstream data.     |
-| `data_dictionary.xlsx`  | Data dictionary explaining each variable.       |
-| `questions.txt`         | The official questions from the challenge.      |
+| `README.md`         | This file.     |
 | `amex_data_res.ipynb`   | Jupyter Notebook with the full data cleaning, analysis, and solutions.            |
 
 
@@ -43,7 +41,18 @@ Make sure you have Python 3.x installed on your system.
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
     ```
 
-3. All the necessary libraries are in the Jupyter Notebook with instructions on how to install them.
+3. **Run this code in the Jupyter Notebook "amex_data_res.ipynb" to download all the files:**
+    ```bash
+    !pip install kagglehub # If you don't have the library.
+    import kagglehub
+
+    # Download latest version
+    path = kagglehub.dataset_download("pratsharma7/the-american-express-campus-challenge-dataset")
+
+    print("Path to dataset files:", path)
+    ```
+
+4. **All the necessary libraries are in the Jupyter Notebook with instructions on how to install them.**
 
 ## 🎯 Key Insights & Conclusions
 
