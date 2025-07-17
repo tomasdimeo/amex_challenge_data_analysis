@@ -1,4 +1,8 @@
-# 📊 The American Express Campus Challenge Dataset
+# 📊 The American Express Campus Challenge Dataset 
+
+<p align="center">
+  <img src="https://imgs.search.brave.com/aA9rhwtcBesbPYeuizmH18-NQbostThv8JDUTXcd_3E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy82/MjA2NzBiOWQ3Yjkx/YjAwMDQxMjI2MTcu/cG5n" alt="Diagrama" width="600"/>
+</p>
 
 Welcome! This repository hosts my resolution of ["The American Express Campus Challenge Dataset 2025 – Product Track"](https://www.kaggle.com/datasets/pratsharma7/the-american-express-campus-challenge-dataset). 
 
