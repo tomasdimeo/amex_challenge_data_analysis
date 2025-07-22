@@ -1,0 +1,83 @@
+About Dataset
+This dataset is for the American Express Campus Challenge 2025 – Product Track. The following is the problem statement:-
+
+1.Clickstream data of the digital footprint left behind by customers as they browse and interact with Amex’s marketing offers online will be provided.
+
+2.The end objective of this problem statement is to analyse this behavioural data and submit the solution to the questions and sub-questions asked in the format described as per the guidelines.
+
+3.Participants are not only required to develop a deep understanding of the data but also understand how it can be made fit to use and derive key actionable insights to achieve the desired solution.
+
+4.Offer Action Variable: Binary outcome takes 1 if a Card Member(CM) has clicked on an offering and 0 otherwise, given that the CM has seen that offering.
+
+There are 6 questions in the problem statement.
+
+Question 1) Using the Data Provided, validate the following statements:
+
+Active Users of the Amex Portal are more likely to choose Airline Offers than other offer categories.
+Active Users of the Amex Portal are generally able to save more money from Discounts than other users.
+3.Mention the Total Population of unique customer IDs out of the total customers who actively use the Amex Portal and have clicked on an Airline Offer.
+Note:
+Active Users of the Amex Portal for a provided timeframe are people who have visited the Amex Portal at least once in the past 30 days from any given date within the provided timeframe.
+The answer for 1 & 2 is expected to be TRUE or FALSE. Answer 3 is an integer value denoting the population.
+
+Question 2) Does the customer value a 'High Discount Value per Dollar' offer more for the following categories? Share the difference of successful offer conversion rates for [High Disc Value per Dollar – Low Disc Value per Dollar ] offers across the following offer categories:
+
+1.Services
+2.Shopping
+3.Travel
+
+Note:
+Exclude the offers with no Discount Value per dollar for the analysis.
+High Disc Value per Dollar Offers are represented by Offers with Disc Value per Dollar >= 50th Percentile.
+Low Disc Value per Dollar Offers are represented by Offers with Disc Value per Dollar < 50th Percentile.
+Answers to 1, 2 and 3 will be a floating-point value rounded off(floor) to 3 decimal places.
+
+Question 3) Let the spending of a customer be defined by the Maximum of spend amount spent by the customer in the last 3 months for any given Timeframe. Divide the Customer Population into Low, Medium & High Spending categories by referring to the Entire Timeframe of provided data, ensuring an equal number of distinct customers per category.
+
+1.Calculate the Average Reward Point to Dollar Value Conversion Rate of the offers offered to each of these categories.
+
+2.Calculate the Average Reward Point to Dollar Value Conversion Rate of the offers in each of these categories that the customer has participated in.
+
+3.Amongst these categories, which segment performed the best for Amex in terms of offers rolled out vs offers participated in?
+
+Note:
+Spends can be negative as well (indicative of cases where money is credited to the customer account).
+The answers to 1 and 2 will be a floating-point value corresponding to each of the categories rounded off(floor) to 3 decimal places.
+Answer to 3 will be a single value denoting the category, i.e. LOW, MEDIUM or HIGH
+
+Question 4) Using the data, build a top 10 offer profile based on the offer conversion rate. [Offer conversion rate = Number of Offers Clicked/ Number of Offers viewed]
+
+1.Share the top 10 Offer ID to Offer category mappings.
+
+2.Find the average 3-month spend of the customers(across all categories) opting for these offers as of 7th November 2023.
+
+3.Find the average conversion rate(across all categories)for customers enrolling for each of these offers over the last 30 days as of 7th November 2023.
+
+Note:
+A Top Offer must be presented to Users at least above the average offer presentation count.
+Answer to 1 will be the top 10 OfferID:Offer Category Mappings.
+Answer to 2 will be a single value i.e. average of the last 3 months spend(floating point, rounded off(floor) to 3 decimal) for the offers listed in Answer 1 across all categories.
+Answer to 3 will be 10 offer ID: values mapping i.e. avg conversion rate across all categories (floating point, rounded off(floor) to 3 decimal) corresponding to all offers listed in Answer 1
+
+Question 5) Using the data, build the top 15 customer profiles based on the offer conversion rate who have participated in our email campaigns in the past 30 days as of 14th November 2023. [Offer conversion rate = Number of Offers Clicked/ Number of Offers viewed]
+
+1.Find the ratio of total offer clicks to the count of distinct channels used to visit the Amex portal in the past 30 days as of 14th November 2023 for these top 15 customers.
+
+2.What is the overall top-performing offer category for each of these customers.
+
+3.To evaluate the performance of the email campaign, find the ratio of email offer clicks to email offers sent out for each customer in the past 30 days as of 14th November 2023.
+
+Note:
+The answer to 1 will be CustomerID:Ratio mapping for the top 15 customers. Ratio will be a floating-point value rounded off(floor) to 3 decimal places.
+The answer to 2 will be CustomerID:OfferCategory mapping for the top 15 customers.
+The answer to 3 will be CustomerID:Ratio mapping for the top 15 Customers. Ratio will be a floating-point value rounded off(floor) to 3 decimal places.
+
+Question 6) Calculate the following on the entire data.
+
+1.The probability of clicking on marketing email offer being sent out.
+
+2.Calculate the probability given that the user has clicked on an offer in the past.
+
+Note:
+To ensure the recency bias while computing the probabilities, EWMA can be leveraged across dates with alpha as 0.5 [Someone who has been clicking on more offers recently will have a higher chance]. The overall ratio of the population can be calculated by taking the average of the ratios of a Given Population.
+The answer for 1 & 2 will be a single floating-point value round value rounded off(floor) to 3 decimal places.
