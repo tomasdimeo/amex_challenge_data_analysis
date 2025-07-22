@@ -21,6 +21,7 @@ Welcome! This repository hosts my resolution of ["The American Express Campus Ch
 | ----------------------- | ----------------------------------------------- |
 | `README.md`         | This file.     |
 | `amex_data_res.ipynb`   | Jupyter Notebook with the full data cleaning, analysis, and solutions.            |
+| `questions.txt`  | Questions to be answered for the challenge. | 
 
 
 ### 🚀 Getting Started
